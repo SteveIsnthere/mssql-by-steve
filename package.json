@@ -1,0 +1,24 @@
+{
+  "name": "mssql-by-steve",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mssql",
+    "sql server",
+    "database",
+    "helper"
+  ],
+  "author": "Steve W",
+  "license": "MIT",
+  "description": "A mssql wrapper that's actually easy to use",
+  "dependencies": {
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.5"
+  }
+}
