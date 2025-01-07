@@ -82,6 +82,15 @@ class SqlHelper {
         return SqlHelper.poolPromise;
     }
 
+    public static async getConnection(): Promise<sql.ConnectionPool> {
+        try {
+            return await new sql.ConnectionPool(SqlHelper.config!).connect();
+        } catch (error) {
+            console.error('Database connection error:', error);
+            throw error;
+        }
+    }
+
     /**
      * Executes a SQL query or stored procedure.
      */
